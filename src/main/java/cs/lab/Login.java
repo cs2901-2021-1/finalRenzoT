@@ -1,6 +1,5 @@
 package cs.lab;
 
-import java.util.Scanner;
 import java.util.logging.Logger;
 
 public class Login {
@@ -33,10 +32,6 @@ public class Login {
 
     public boolean verifyPassword(String password){
         return this.password.equals(password);
-    }
-
-    public void menu(){
-
     }
 
 }
