@@ -7,7 +7,7 @@ public class Login {
     String username;
     String password;
 
-    static final Logger logger = Logger.getLogger(Demo.class.getName());
+    static final Logger logger = Logger.getLogger(Login.class.getName());
 
     Login(){
         //Default constructor

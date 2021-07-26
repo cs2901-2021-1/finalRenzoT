@@ -11,14 +11,4 @@ public class Administrator {
         vaccinationCenters.add(vaccinationCenter1);
     }
 
-    public void darAlta(){
-
-    }
-
-    public void darBaja(){
-
-    }
-
-
-
 }

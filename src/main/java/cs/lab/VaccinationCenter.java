@@ -27,14 +27,6 @@ public class VaccinationCenter {
         return id;
     }
 
-    public ArrayList<Vaccinated> getVaccinatedList() {
-        return vaccinatedList;
-    }
-
-    public void setVaccinatedList(ArrayList<Vaccinated> vaccinatedList) {
-        this.vaccinatedList = vaccinatedList;
-    }
-
     public int getParcialVaccinated() {
         return parcialVaccinated;
     }
