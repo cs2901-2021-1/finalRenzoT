@@ -1,8 +1,13 @@
 package cs.lab;
 
+import java.util.Scanner;
+import java.util.logging.Logger;
+
 public class Login {
     String username;
     String password;
+
+    static final Logger logger = Logger.getLogger(Demo.class.getName());
 
     Login(){
         //Default constructor
@@ -30,5 +35,8 @@ public class Login {
         return this.password.equals(password);
     }
 
+    public void menu(){
+
+    }
 
 }

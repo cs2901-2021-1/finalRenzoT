@@ -1,6 +1,5 @@
 package cs.lab;
 
-import java.io.IOException;
 import java.util.Scanner;
 import java.util.logging.Logger;
 
@@ -10,7 +9,7 @@ public class Demo {
 
     static final Logger logger = Logger.getLogger(Demo.class.getName());
 
-    public static void main(String[] args) throws IOException{
+    public static void main(String[] args){
 
         Login log = new Login();
         String username;
@@ -27,6 +26,6 @@ public class Demo {
             logger.info("¡Contrasena Incorrecta!");
         } while (!log.verifyPassword(password));
 
-        logger.info("Hello World");
+
     }
 }

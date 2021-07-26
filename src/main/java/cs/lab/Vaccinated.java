@@ -3,10 +3,10 @@ package cs.lab;
 public class Vaccinated {
     String name;
     String lastname;
-    Integer age;
+    int age;
     String status;
 
-    public Vaccinated(String name, String lastname, Integer age, String status) {
+    public Vaccinated(String name, String lastname, int age, String status) {
         this.name = name;
         this.lastname = lastname;
         this.age = age;

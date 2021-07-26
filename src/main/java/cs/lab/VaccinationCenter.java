@@ -1,12 +1,12 @@
 package cs.lab;
 
-import java.util.List;
+import java.util.ArrayList;
 
 public class VaccinationCenter {
-    Integer ID;
-    List<Vaccinated> vaccinatedList;
-    Integer parcialVaccinated;
-    Integer completedVaccinated;
+    int id;
+    ArrayList<Vaccinated> vaccinatedList = new ArrayList<>();
+    int parcialVaccinated = 0;
+    int completedVaccinated = 0;
     String status;
 
     public VaccinationCenter() {
@@ -14,27 +14,28 @@ public class VaccinationCenter {
     }
 
 
-    public VaccinationCenter(Integer ID) {
-        this.ID = ID;
+    public VaccinationCenter(int id) {
+        this.id = id;
         Vaccinated v1 = new Vaccinated("Paco","Lope",87,"parcial");
         Vaccinated v2 = new Vaccinated("Jose","Roti",56,"Completed");
         vaccinatedList.add(v1);
         vaccinatedList.add(v2);
+        this.status = "down";
     }
 
-    public Integer getID() {
-        return ID;
+    public int getID() {
+        return id;
     }
 
-    public List<Vaccinated> getVaccinatedList() {
+    public ArrayList<Vaccinated> getVaccinatedList() {
         return vaccinatedList;
     }
 
-    public void setVaccinatedList(List<Vaccinated> vaccinatedList) {
+    public void setVaccinatedList(ArrayList<Vaccinated> vaccinatedList) {
         this.vaccinatedList = vaccinatedList;
     }
 
-    public Integer getParcialVaccinated() {
+    public int getParcialVaccinated() {
         return parcialVaccinated;
     }
 
@@ -45,7 +46,7 @@ public class VaccinationCenter {
         }
     }
 
-    public Integer getCompletedVaccinated() {
+    public int getCompletedVaccinated() {
         return completedVaccinated;
     }
 
@@ -61,6 +62,6 @@ public class VaccinationCenter {
     }
 
     public void setStatus(String status) {
-
+        this.status = status;
     }
 }

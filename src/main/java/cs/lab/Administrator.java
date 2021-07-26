@@ -1,10 +1,10 @@
 package cs.lab;
 
-import java.util.List;
+import java.util.ArrayList;
 
 public class Administrator {
 
-    List<VaccinationCenter> vaccinationCenters;
+    ArrayList<VaccinationCenter> vaccinationCenters = new ArrayList<>();
 
     public Administrator(){
         VaccinationCenter vaccinationCenter1 = new VaccinationCenter(10);
